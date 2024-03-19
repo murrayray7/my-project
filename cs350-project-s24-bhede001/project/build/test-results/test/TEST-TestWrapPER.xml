@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestWrapPER" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-03-18T23:23:02" hostname="callisto" time="0.405">
+  <properties/>
+  <testcase name="testWrapName_EmptyName()" classname="TestWrapPER" time="0.205"/>
+  <testcase name="testWrapName_InvalidName()" classname="TestWrapPER" time="0.001"/>
+  <testcase name="testWrapName_ValidName()" classname="TestWrapPER" time="0.097"/>
+  <testcase name="testWrapName_WhitespaceName()" classname="TestWrapPER" time="0.001"/>
+  <testcase name="testWrapName_AllSymbols()" classname="TestWrapPER" time="0.001"/>
+  <testcase name="testWrapName_MixedName()" classname="TestWrapPER" time="0.001"/>
+  <system-out><![CDATA[Word: , Result: false
+Word: John-Doe, Result: false
+Word: John Doe, Result: true
+Word:     , Result: false
+Word: @#$%, Result: false
+Word: John123, Result: false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

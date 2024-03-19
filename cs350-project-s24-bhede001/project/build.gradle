@@ -1,0 +1,21 @@
+plugins {
+   id 'java'
+   id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application { // Allows  gradle run --args="command line arguments"
+    mainClass = 'packages.MainClass'
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0' 
+    testImplementation 'org.hamcrest:hamcrest-library:2.2'
+}
+
+test {  
+    ignoreFailures = true
+    useJUnitPlatform()
+}

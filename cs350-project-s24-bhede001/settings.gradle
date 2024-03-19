@@ -1,0 +1,3 @@
+rootProject.name = 'cs350-project-s24-bhede001'
+
+include "project"
